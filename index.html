@@ -5,8 +5,8 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="shortcut icon" href="img/logo.png" type="image/x-icon">
-    <link rel="stylesheet" href="reset.css">
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/style.css">
     <title>Francisco Carvajal Villegas</title>
 </head>
 <body>
@@ -14,20 +14,42 @@
     <header>
         <div class="header">
             <img src="img/logo.png" alt="logo" class="logo">
-            <nav>
+            <nav class="nav-bar">
                 <ul class="nav-bar">
-                    <a href="#top"><li class="nav-item">Inicio</li></a>
-                    <a href="#acerca-de"><li class="nav-item">Acerca de mi</li></a>
-                    <a href="#portafolio"><li class="nav-item">Portafolio</li></a>
-                    <a href="#contacto"><li class="nav-item">Contacto</li></a>
+                    <li class="nav-item"><a href="#top">Inicio</a></li>
+                    <li class="nav-item"><a href="#acerca-de">Acerca</a></li>
+                    <li class="nav-item"><a href="#portafolio">Portafolio</a></li>
+                    <li class="nav-item"><a href="#contacto">Contacto</a></li>
                 </ul>
             </nav>
-            <div class="redes">
+            <div class="redes" id="redes-nav">
                 <a href="https://www.linkedin.com/in/francisco-carvajal-villegas/" target="_blank"><img src="img/linkedin.png" alt="social-links"></a>
                 <a href="https://github.com/FranciscoCarvajal404" target="_blank"><img src="img/git.png" alt="social-links"></a>
             </div>
+
+            <div class="bars_menu">
+                <span class="line1_bars-menu"></span>
+                <span class="line2_bars-menu"></span>
+                <span class="line3_bars-menu"></span>
+            </div>
+        </div>
+
+        <div class="menu">
+            <nav>
+                <ul class="menu-nav">
+                    <li class="menu-item"><a href="#top">Inicio</a></li>
+                    <li class="menu-item"><a href="#acerca-de">Acerca</a></li>
+                    <li class="menu-item"><a href="#portafolio">Portafolio</a></li>
+                    <li class="menu-item"><a href="#contacto">Contacto</a></li>
+                </ul>
+                <div class="redes">
+                    <a href="https://www.linkedin.com/in/francisco-carvajal-villegas/" target="_blank"><img src="img/linkedin.png" alt="social-links"></a>
+                    <a href="https://github.com/FranciscoCarvajal404" target="_blank"><img src="img/git.png" alt="social-links"></a>
+                </div>
+            </nav>
         </div>
     </header>
+
 
         <section id="first-section">
             <div class="container">
@@ -49,7 +71,7 @@
 
         <section>
             <div class="container">
-                <h1>Tecnologías</h1>
+                <h1>Acerca de mi</h1>
                 <p>Como front-end developer, trabajo con <b>HTML, CSS JS y Git</b>. Para diseño, tengo conocimiento en <b>Figma</b> y <b>Photoshop</b>. Mejoro y aprendo constantemente, actualmente formándome con <b>Python, ReactJS</b>, y <b>TypeScript</b>. </p>
             </div>
             <img src="img/tecnologia.png" alt="Hello Wolrd!" class="img-grande">
@@ -88,7 +110,11 @@
                     <div class="portafolio-frame">
                         <div class="portafolio-item">
                             <h2>Encripador de texto</h2>
-                            <a href="https://franciscocarvajal404.github.io/Alura-One-C1/"><img src="img/encriptador.png" alt="Encriptador" class="portafolio-img"></a>
+                            <a href="https://franciscocarvajal404.github.io/Alura-One-C1/"><img src="img/encriptador.png" alt="Encriptador" class="portafolio-img" target="_blank"></a>
+                        </div>
+                        <div class="portafolio-item">
+                            <h2>Encripador de texto</h2>
+                            <a href="https://franciscocarvajal404.github.io/Alura-One-C1/"><img src="img/encriptador.png" alt="Encriptador" class="portafolio-img" target="_blank"></a>
                         </div>
                     </div>
             </div>
@@ -121,3 +147,5 @@
 
 </body>
 </html>
+
+<script src="js/script.js"></script>

@@ -1,8 +1,14 @@
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap');
 
 body{
+    margin: 0 100px 0 100px;
     background-color: #EEEFF4;
     font-family: 'Inter', sans-serif;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
 }
 
 h1{
@@ -27,7 +33,7 @@ header{
     background: black;
     color: white;
 
-    width: 100%;
+    width: 100vw;
     position: -webkit-sticky;
     position: sticky;
     top: 0;
@@ -37,14 +43,18 @@ header{
     display: flex;
     justify-content: center;
     align-items: center;
+    z-index: 10;
 }
 
 .header{
     gap: 128px;
+    width: 100vw;
 
     display: flex;
     justify-content: space-around;
     align-items: center;
+
+    z-index: 10;
 }
 
 .nav-bar{
@@ -60,6 +70,96 @@ header{
     cursor: pointer;
     color: #FF0000;
     transition: 0.2s all;
+}
+
+.menu{
+    opacity: 0;
+    background: none;
+    position: absolute;
+    top: 0;
+    left: 0;
+
+    width: 50%;
+    height: 100vh;
+
+    padding-top: 100px;
+
+    transform: translateX(-100%);
+    transition: all 0.5s ease;
+}
+
+.menu_active{
+    display: block;
+    background: rgba(0, 0, 0, 0.8);
+    -webkit-backdrop-filter: blur(10px);
+    backdrop-filter: blur(10px);
+    position: absolute;
+    top: 0;
+    opacity: 1;
+
+    padding-top: 100px;
+
+    width: 50%;
+    height: 100vh;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+
+    transform: translateX(0%);
+    transition: all 0.5s ease;
+}
+
+.menu-item{
+    margin-bottom: 32px;
+    opacity: 0;
+    z-index: -1;
+
+    font-size: 18px;
+}
+
+.menu_active .menu-item{
+    opacity: 1;
+}
+
+.bars_menu{
+    width: 30px;
+    height: 30px;
+    cursor: pointer;
+    display: none;
+}
+
+.bars_menu span{
+    display: block;
+    width: 100%;
+    height: 2px;
+    background: white;
+    margin-top: 6px;
+
+    transform-origin: 0px 100%;
+    transition: all 500ms;
+}
+
+.activeline1_bars-menu{
+    transform: rotate(45deg) translate(-2px, 1px);
+}
+
+.activeline3_bars-menu{
+    transform: rotate(-45deg) translate(-4px, 2px);
+}
+
+.activeline2_bars-menu{
+    opacity: 0;
+    margin-left: -30px;
+}
+
+.redes{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    gap: 12px;
 }
 
 .logo{
@@ -82,11 +182,11 @@ section{
 }
 
 .container{
-    width: 40%;
+    width: 80%;
     gap: 32px;
+    margin: 0 auto;
 
     display: flex;
-    flex-wrap: wrap;
     flex-direction: column;
 
     line-height: 1.5;
@@ -106,13 +206,15 @@ section{
 }
 
 .container-vert{
-    width: 68%;
+    width: 100%;
     gap: 32px;
 
     line-height: 1.5;
 
     display: flex;
     flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
 
 .educacion-items{
@@ -130,15 +232,25 @@ section{
 }
 
 .portafolio-frame{
+    width: 100%;
+    gap: 32px;
     display: flex;
-    flex-wrap: wrap;
+    flex-direction: row;
     justify-content: center;
     align-items: center;
 }
 
+.portafolio-item{
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+}
+
 
 .portafolio-img{
-    width: 500px;
+    width: 100%;
     border-radius: 10px;
 }
 
@@ -148,6 +260,10 @@ section{
     transition: 0.2s all;
 }
 
+form{
+    width: 100%;
+}
+
 #form-cont{
     gap: 12px;
 }
@@ -155,6 +271,8 @@ section{
 label{
     margin-top: 32px;
     opacity: 0.5;
+    
+    width: 100%;
 
     font-size: 16px;
 }
@@ -165,6 +283,8 @@ input{
     background: none;
     border: 1px solid rgba(0, 0, 0, 0.5);
     border-style: none none solid none;
+
+    width: 100%;
 
     font-family: 'Inter', sans-serif;
 }
@@ -195,7 +315,7 @@ input:focus, textarea:focus{
     background: black;
     color: white;
 
-    width: 20%;
+    width: 200px;
     height: 50px;
 
     border-radius: 10px;
@@ -214,13 +334,75 @@ footer{
     color: white;
 
     height: 72px;
+    width: 100vw;
 
     display: flex;
     justify-content: center;
     align-items: center;
-    font-size: 14px;
+
+    text-align: center;
 }
 
 footer p{
+    padding: 16px;
+    font-size: 14px;
     opacity: 0.5;
+}
+
+@media screen and (max-width:970px){
+    section, .educacion-items, .container, .portafolio-frame{
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .img-grande{
+        width: 40%;
+    }
+
+    .educacion-items{
+        gap: 64px;
+    }
+
+    .portafolio-item{
+        width: 100%;
+    }
+}
+
+@media screen and (max-width:740px){
+    body{
+        margin: 0 50px 0 50px;
+    }
+
+    .nav-bar, #redes-nav{
+        display: none;
+    }
+
+    .bars_menu{
+        display: block;
+    }
+
+    h1{
+        font-weight: bold;
+        font-size: 64px;
+    }
+    
+    h2{
+        font-weight: bold;
+        font-size: 24px;
+    }
+    
+    p{
+        font-size: 18px;
+    }
+
+    .texto-educacion{
+        width: 100%;
+    }
+
+
+    .img-grande,  .francisco{
+        width: 80%;
+    }
+
 }
