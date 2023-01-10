@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="img/logo.png" type="image/x-icon">
+    <link rel="stylesheet" href="reset.css">
+    <link rel="stylesheet" href="style.css">
+    <title>Francisco Carvajal Villegas</title>
+</head>
+<body>
+    
+    <header>
+        <div class="header">
+            <img src="img/logo.png" alt="logo" class="logo">
+            <nav>
+                <ul class="nav-bar">
+                    <a href="#top"><li class="nav-item">Inicio</li></a>
+                    <a href="#acerca-de"><li class="nav-item">Acerca de mi</li></a>
+                    <a href="#portafolio"><li class="nav-item">Portafolio</li></a>
+                    <a href="#contacto"><li class="nav-item">Contacto</li></a>
+                </ul>
+            </nav>
+            <div class="redes">
+                <a href="https://www.linkedin.com/in/francisco-carvajal-villegas/" target="_blank"><img src="img/linkedin.png" alt="social-links"></a>
+                <a href="https://github.com/FranciscoCarvajal404" target="_blank"><img src="img/git.png" alt="social-links"></a>
+            </div>
+        </div>
+    </header>
+
+        <section id="first-section">
+            <div class="container">
+                <h1>Francisco<br>Carvajal<br>Villegas</h1>
+                <p>Estudiante de física y front-end development</p>
+            </div>
+            <img src="img/francisco.png" alt="Francisco" class="francisco">
+        </section>
+
+        <section>
+            <img src="img/helloworld.png" alt="Hello Wolrd!" class="img-grande">
+            <div class="container">
+                <h1>¡Hola Mundo!</h1>
+                <p>Mi nombre es Francisco Carvajal Villegas, estudiante mexicano de Física y front-end development radicando actualmente en Puebla, México. Bienvenido a la primera versión de mi página web personal.</p>
+            </div>
+        </section>
+
+        <div id="acerca-de"></div>
+
+        <section>
+            <div class="container">
+                <h1>Tecnologías</h1>
+                <p>Como front-end developer, trabajo con <b>HTML, CSS JS y Git</b>. Para diseño, tengo conocimiento en <b>Figma</b> y <b>Photoshop</b>. Mejoro y aprendo constantemente, actualmente formándome con <b>Python, ReactJS</b>, y <b>TypeScript</b>. </p>
+            </div>
+            <img src="img/tecnologia.png" alt="Hello Wolrd!" class="img-grande">
+        </section>
+
+        <section>
+            <div class="container-vert">
+                    <h1>Educación</h1> 
+                    <div class="educacion-items">
+                    <div class="texto-educacion">
+                        <img src="img/edu1.png" alt="edu1" width="32px">
+                        <h2>Licenciatura en Física</h2>
+                        <p>BUAP 2020-2022 (Pausada)</p>
+                    </div>
+
+                    <div class="texto-educacion">
+                        <img src="img/edu2.png" alt="edu2" width="32px">
+                        <h2>Oracle Next Education</h2>
+                        <p>2022-presente (Especialización en front-end)</p>
+                    </div>
+
+                    <div class="texto-educacion">
+                        <img src="img/edu3.png" alt="edu3" width="32px">
+                        <h2>Autodidacta</h2>
+                        <p>Siempre formándome, leyendo y creando proyectos personales para mejorar (Certificaciones en perfil de LinkedIn)</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <div id="portafolio"></div>
+
+        <section>
+            <div class="container-vert">
+                    <h1>Portafolio</h1> 
+                    <div class="portafolio-frame">
+                        <div class="portafolio-item">
+                            <h2>Encripador de texto</h2>
+                            <img src="img/encriptador.png" alt="Encriptador" class="portafolio-img">
+                        </div>
+                    </div>
+            </div>
+        </section>
+
+        <div id="contacto"></div>
+
+        <section>
+            <form action="#" class="container-vert" id="form-cont">
+                            <legend><h1>Contacto</h1></legend>
+
+                            <label for="name" class="formulario-label">Nombre*</label>
+                            <input type="text" id="name" name="name" class="form-input"  autocomplete="off" placeholder="John Doe">
+                            
+                            <label for="email" class="formulario-label">Mail*</label>
+                            <input type="email" id="mail" name="mail" class="form-input"  autocomplete="off" placeholder="example@mail.com">
+                            
+                            <label for="mensaje" class="formulario-label" id="mensaje-label">Mensaje</label>
+                            <input type="text" id="text" name="text" class="form-input"  autocomplete="off" id="mensaje" placeholder="¿Qué pasa?..."></input>
+                            
+                            <input id="enviarCorreo" type="submit" class="submit" name="enviar">
+                            <h3>LinkedIn y GitHub en el header:)</h3>
+            </form>
+        </section>
+
+        <footer>
+            <p>© 2023 Francisco Carvajal Villegas. Todos los derechos reservados</p>
+        </footer>
+
+
+</body>
+</html>
