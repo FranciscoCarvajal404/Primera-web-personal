@@ -142,6 +142,12 @@ section{
     border-radius: 10px;
 }
 
+.portafolio-img:hover{
+    opacity: 0.8;
+    transform: scale(1.015);
+    transition: 0.2s all;
+}
+
 #form-cont{
     gap: 12px;
 }
