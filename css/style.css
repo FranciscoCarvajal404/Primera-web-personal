@@ -331,6 +331,13 @@ input:focus, textarea:focus{
     cursor: pointer;
 }
 
+#redes-contacto{
+    background-color: black;
+    border-radius: 10px;
+    height: auto;
+    padding: 10px 10px 5px 10px;
+}
+
 footer{
     margin-top: 200px;
     gap: 32px;
@@ -388,7 +395,7 @@ footer p{
 
     h1{
         font-weight: bold;
-        font-size: 64px;
+        font-size: 55px;
     }
     
     h2{
