@@ -70,7 +70,7 @@ header{
     margin: 0 15px 0 15px;
 }
 
-.nav-item:hover{
+.nav-item a:hover, .menu-item a:hover{
     cursor: pointer;
     color: #FF0000;
     transition: 0.2s all;
