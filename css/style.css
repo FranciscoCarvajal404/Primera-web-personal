@@ -225,6 +225,8 @@ section{
     display: flex;
     justify-content: space-between;
     align-items: flex-start;
+
+    margin-top: 32px;
 }
 
 .texto-educacion{
@@ -373,6 +375,11 @@ footer p{
 
     .educacion-items{
         gap: 64px;
+        width: 80%;
+    }
+
+    .texto-educacion{
+        width: 100%;
     }
 
     .portafolio-item{
@@ -405,10 +412,6 @@ footer p{
     
     p{
         font-size: 18px;
-    }
-
-    .texto-educacion{
-        width: 100%;
     }
 
 
