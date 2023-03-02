@@ -52,7 +52,7 @@ header{
 
 .header{
     gap: 128px;
-    width: 100vw;
+    width: 100%;
 
     display: flex;
     justify-content: space-around;
@@ -321,16 +321,25 @@ input:focus, textarea:focus{
     background: black;
     color: white;
 
-    width: 200px;
+    width: 150px;
     height: 50px;
 
     border-radius: 10px;
+    border-style: none;
+
+    font-family: 'Inter', sans-serif;
+    font-size: 18px;
 }
 
 .submit:hover{
     background: white;
     color: black;
     cursor: pointer;
+
+    transform: translateY(-4px);
+    box-shadow: -1px 16px 19px 6px rgba(0,0,0,0.51);
+    -webkit-box-shadow: -1px 16px 19px 6px rgba(0,0,0,0.51);
+    -moz-box-shadow: -1px 16px 19px 6px rgba(0,0,0,0.51);
 }
 
 #redes-contacto{
@@ -362,8 +371,43 @@ footer p{
     opacity: 0.5;
 }
 
+.link-red{
+    color: black !important;
+    font-weight: bold;
+}
+
+.link-red:hover{
+    color: #FF0000 !important; 
+}
+
+.mensaje-exitoso{
+    height: 100%;
+    width: 100%;
+}
+
+.page-404{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    margin: 125px auto;
+
+    gap: 60px;
+}
+
+.mensaje-404{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    line-height: 1.5;
+    gap: 20px;
+}
+
+
 @media screen and (max-width:970px){
-    section, .educacion-items, .container, .portafolio-frame{
+    section, .educacion-items, .container, .portafolio-frame, .page-404{
         flex-direction: column;
         align-items: center;
         justify-content: center;
@@ -417,6 +461,11 @@ footer p{
 
     .img-grande,  .francisco{
         width: 80%;
+    }
+
+    .page-404{
+        gap: 10px;
+        margin: 20px auto;
     }
 
 }
